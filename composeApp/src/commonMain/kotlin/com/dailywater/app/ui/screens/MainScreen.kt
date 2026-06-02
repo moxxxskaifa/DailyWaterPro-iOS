@@ -21,6 +21,7 @@ val DAILY_GOAL = 2000
 val QUICK_ML = listOf(100, 200, 250, 300, 500)
 
 @Composable
+@OptIn(ExperimentalMaterial3Api::class)
 fun MainScreen() {
     var totalMl by remember { mutableStateOf(0) }
     var customMl by remember { mutableStateOf("") }
