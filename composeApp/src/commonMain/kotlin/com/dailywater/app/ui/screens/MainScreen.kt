@@ -35,15 +35,15 @@ fun MainScreen() {
                  colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f))) {
                 Column(Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
                     Text(totalMl.toString(), fontSize = 40.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
-                    Text("ml", fontSize = 14.sp, color = MaterialTheme.colorScheme.onMaterialTheme.colorScheme.surfaceVariant)
-                    Text("of {DAILY_GOAL}ml", fontSize = 11.sp, color = MaterialTheme.colorScheme.onMaterialTheme.colorScheme.surfaceVariant)
+                    Text("ml", fontSize = 14.sp, color = MaterialTheme.colorScheme.MaterialTheme.colorScheme.oncolorScheme.surfaceVariant)
+                    Text("of {DAILY_GOAL}ml", fontSize = 11.sp, color = MaterialTheme.colorScheme.MaterialTheme.colorScheme.oncolorScheme.surfaceVariant)
                 }
             }
             Spacer(Modifier.height(16.dp))
             LinearProgressIndicator(progress = { progress }, modifier = Modifier.fillMaxWidth().height(8.dp).clip(RoundedCornerShape(4.dp)),
                 color = MaterialTheme.colorScheme.primary, trackColor = MaterialTheme.colorScheme.surfaceVariant)
             Spacer(Modifier.height(4.dp))
-            Text("{remaining}ml remaining", fontSize = 13.sp, color = MaterialTheme.colorScheme.onMaterialTheme.colorScheme.surfaceVariant)
+            Text("{remaining}ml remaining", fontSize = 13.sp, color = MaterialTheme.colorScheme.MaterialTheme.colorScheme.oncolorScheme.surfaceVariant)
             Spacer(Modifier.height(24.dp))
             Text("Quick Add", fontWeight = FontWeight.SemiBold); Spacer(Modifier.height(12.dp))
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
@@ -51,7 +51,7 @@ fun MainScreen() {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Button(onClick = { totalMl += ml; haptic.light() }, modifier = Modifier.size(56.dp), shape = CircleShape,
                                contentPadding = PaddingValues(0.dp)) { Text(ml.toString(), fontSize = 13.sp, fontWeight = FontWeight.Bold) }
-                        Text("ml", fontSize = 10.sp, color = MaterialTheme.colorScheme.onMaterialTheme.colorScheme.surfaceVariant)
+                        Text("ml", fontSize = 10.sp, color = MaterialTheme.colorScheme.MaterialTheme.colorScheme.oncolorScheme.surfaceVariant)
                     }
                 }
             }
