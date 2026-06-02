@@ -33,7 +33,7 @@ fun MainScreen() {
         Column(Modifier.fillMaxSize().padding(padding).padding(24.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             Spacer(Modifier.height(20.dp))
             Card(modifier = Modifier.size(180.dp), shape = CircleShape,
-                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f))) {
+                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary)) {
                 Column(Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
                     Text(totalMl.toString(), fontSize = 40.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
                     Text("ml", fontSize = 14.sp, color = MaterialTheme.colorScheme.MaterialTheme.colorScheme.oncolorScheme.surfaceVariant)
